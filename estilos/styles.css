@@ -76,7 +76,16 @@ h2 {
     animation-name: fotitos;
     animation-duration: 2s;
 }
-
+.fotos__carrusel {
+    width: 400px;
+    height: 750px;
+    border: #e3d3ff solid 3px;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 10%;
+    object-fit: cover;
+    display: inline-block;
+}
 
 @keyframes fotitos {
     0% {transform: rotate(0deg); translate: (0);}
@@ -174,7 +183,19 @@ h2 {
    flex-flow: row wrap;
 }
 
-.box__son {
+
+.box__son{
+
+    height: max-content;
+    width: max-content;
+    text-align: center;
+    line-height: 80px;
+    padding: 1rem;
+    margin: 1rem;
+    list-style: none;
+
+}
+.box__son--h1 {
 
     height: max-content;
     width: max-content;
@@ -184,6 +205,9 @@ h2 {
     margin: 1rem;
     list-style: none;
     color: black;
+    -webkit-text-stroke: 2px black;
+    color: white;
+    font-size: 3rem;
 }
 .box__link {
     text-decoration: none;
@@ -220,7 +244,14 @@ h2 {
     padding: 10px;
     order: 3;
 }
-
+.clase__producto {
+    background-color: pink;
+    margin-bottom: 10px;
+    padding: 2rem;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
 .producto {
     display: inline-block;
     margin: 3rem;
@@ -233,6 +264,7 @@ h2 {
     font-size: 2rem;
     text-align: center;
     padding: 5px;
+    background-color: #e3d3ff;
 }
 
 .producto__nombre {
@@ -274,6 +306,8 @@ position: relative;
 ul {
     list-style: none;
     font-size: 0;
+    margin-left: 0;
+    padding-left: 0;
 }
 li{
     display: inline-block;
@@ -459,6 +493,9 @@ border: #e3d3ff solid 2px;
         margin: 5px;
         color: blueviolet;
         font-size: 35px ;
+    }
+    .box__son--h1 {
+       font-size: 2.6rem;
     }
     .box__link {
         color: white;
