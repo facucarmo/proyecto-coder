@@ -1,0 +1,59 @@
+.backgroundPurpFooter {
+    background-color: #e3d3ff;
+    padding: 3px;
+    margin: 0;
+    border: whitesmoke solid 3px;
+    font-family: 'Rubik', sans-serif;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+.boxes {
+    padding: 5px;
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 20px;
+}
+.button {
+    width: 100px;
+    height: 40px;
+    padding: 3px;
+    margin: 10px;
+    border:  solid 1px;
+    border-radius: 50px;
+}
+.preguntas__footer {
+    font-family: 'Rubik', sans-serif; 
+    font-size: 1.5rem;
+    background-color: #e3d3ff;
+    padding: 10px;
+    margin: 10px;
+    border: #e3d3ff solid 3px;
+    display: block;
+    width: max-content;
+    height: max-content;
+    border-radius: 50px;
+}
+.whatsapp {
+    position: fixed;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    background-color: #e3d3ff;
+    color: antiquewhite;
+    width: max-content;
+    height: max-content;
+}
+.icono__whatsapp {
+    color: green;
+    margin: 5px;
+    padding: 3px;
+}
+.icono__insta {
+    color: palevioletred;
+    margin: 5px;
+    padding: 3px;
+}

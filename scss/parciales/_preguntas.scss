@@ -1,0 +1,71 @@
+
+.preguntas {
+    font-family: 'Rubik', sans-serif; 
+    font-size: 1.5rem;
+    background-color: #e3d3ff;
+    padding: 10px;
+    margin: 10px;
+    border: #e3d3ff solid 3px;
+    display: block;
+    width: max-content;
+    height: max-content;
+    border-radius: 50px;
+}
+.preguntas__2r {
+    font-family: 'Rubik', sans-serif; 
+    font-size: 1.5rem;
+    background-color: #e3d3ff;
+    padding: 10px;
+    margin: 10px;
+    border: #e3d3ff solid 3px;
+    display: block;
+    width: max-content;
+    height: max-content;
+    border-radius: 50px;
+}
+.respuestas {
+    font-family:'Rubik', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    border: pink solid 1px;
+    width: max-content;
+    height: max-content;
+    border-radius: 50px;
+}
+.mapita {
+    border: solid 2px pink;
+    background-color: #e3d3ff;
+    padding: 10px;
+    height: max-content;
+    width: max-content;
+    text-align: center;
+    display: block;
+}
+
+.iframe {
+    width: 450px;
+    height: 450px;
+}
+
+.mapita__p {
+    font-family: 'Rubik', sans-serif; 
+    font-size: 1.5rem;
+    background-color: pink;
+    padding: 10px;
+    border: #e3d3ff solid 3px;
+    display: block;
+    width: max-content;
+    height: max-content;
+    color: white;
+    -webkit-text-stroke: 1.5px black;
+}
+.boxes__consulta {
+    padding: 5px;
+    display: block;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border: solid 1px;
+    border-radius: 20px;
+}
