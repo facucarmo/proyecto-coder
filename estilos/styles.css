@@ -541,17 +541,15 @@ border: #e3d3ff solid 2px;
     text-align: center;
     align-items: center;
 }
-
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 1023px) {
     .fotos {
-        width: 120px;
-        height: 120px;
+        width: 300px;
+        height: 300px;
         border-radius: 10%;
     }
     .fotos__pink {
-        width: 120px;
-        height: 120px;
+        width: 300px;
+        height: 300px;
         border-radius: 10%;
     }
     .box__son {
@@ -580,19 +578,19 @@ border: #e3d3ff solid 2px;
     }
     .preguntas {
         font-size: 20px;
-        display: inline-block;
-        width: 300px;
+        display: flex;
+        width: max-content;
         border-radius: 25px;
     }
     .preguntas__footer {
         font-size: 20px;
-        width: 300px;
+        width: 400px;
         border-radius: 25px;
     }
     .preguntas__2r {
         font-size: 20px;
         display: inline-block;
-        width: 300px;
+        width: max-content;
         border-radius:25px ;
         height: max-content;
     }
@@ -629,17 +627,17 @@ border: #e3d3ff solid 2px;
         gap: 1rem;
     }
     .grid__hijo {
-        width: 140px;
-        height: 240px;
+        width: 400px;
+        height: 450px;
         padding: 2px;
         border-radius: 5%;
     }
     .producto__nombre {
-        font-size:10px ;
+        font-size:20px ;
         padding: 2px;
     }
     .producto__precio {
-        font-size: 10px; 
+        font-size: 20px; 
         padding:2px;
     }
     .grid__productos{
@@ -756,15 +754,16 @@ border: #e3d3ff solid 2px;
                 position: relative;
             }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 600px) {
+
     .fotos {
-        width: 300px;
-        height: 300px;
+        width: 120px;
+        height: 120px;
         border-radius: 10%;
     }
     .fotos__pink {
-        width: 300px;
-        height: 300px;
+        width: 120px;
+        height: 120px;
         border-radius: 10%;
     }
     .box__son {
@@ -793,19 +792,19 @@ border: #e3d3ff solid 2px;
     }
     .preguntas {
         font-size: 20px;
-        display: flex;
-        width: max-content;
+        display: inline-block;
+        width: 300px;
         border-radius: 25px;
     }
     .preguntas__footer {
         font-size: 20px;
-        width: 400px;
+        width: 300px;
         border-radius: 25px;
     }
     .preguntas__2r {
         font-size: 20px;
         display: inline-block;
-        width: max-content;
+        width: 300px;
         border-radius:25px ;
         height: max-content;
     }
@@ -842,17 +841,17 @@ border: #e3d3ff solid 2px;
         gap: 1rem;
     }
     .grid__hijo {
-        width: 400px;
-        height: 450px;
+        width: 140px;
+        height: 240px;
         padding: 2px;
         border-radius: 5%;
     }
     .producto__nombre {
-        font-size:20px ;
+        font-size:10px ;
         padding: 2px;
     }
     .producto__precio {
-        font-size: 20px; 
+        font-size: 10px; 
         padding:2px;
     }
     .grid__productos{
