@@ -32,7 +32,7 @@ h2 {
     border: #e3d3ff solid 3px;
     font-family: 'Rubik', sans-serif;
     position: sticky;
-    width: 100vw;
+    width: 100%;
     z-index: 10;
     top: 0;
     left: 0;    
@@ -45,7 +45,7 @@ h2 {
     margin: 0;
     border: whitesmoke solid 3px;
     font-family: 'Rubik', sans-serif;
-    width: 100vw;
+    width: 100%;
     top: 0;
     left: 0;
 }
@@ -178,7 +178,7 @@ height: max-content;
     height: max-content;
     width: max-content;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 .iframe {
@@ -193,7 +193,6 @@ height: max-content;
     padding: 10px;
     border: #e3d3ff solid 3px;
     display: block;
-    width: max-content;
     height: max-content;
     color: white;
     -webkit-text-stroke: 1.5px black;
@@ -312,7 +311,7 @@ height: max-content;
     font-size: 2.5rem;
     -webkit-text-stroke: 2px black;
     color: white;
-    width: 100vw;
+    width:100%;
 }
 .producto {
     display: inline-block;
@@ -918,14 +917,17 @@ border: #e3d3ff solid 2px;
         height: 200px;
         }
         .iframe {
-            width: 250px;
-            height: 250px;
+            width: 300px;
+            height: 300px;
         }
         .mapita__p {
             font-size: 20px;
-            width: 400px;
+            width: 300px;
             color: black;
             ;
+        }
+        .mapita {
+            width: 350px;
         }
         ul {
             display: block;
