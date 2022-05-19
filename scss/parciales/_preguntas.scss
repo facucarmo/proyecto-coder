@@ -1,7 +1,7 @@
 .preguntas {
-    font-family: 'Rubik', sans-serif; 
+    font-family: 'Noto Sans', sans-serif; 
     font-size: 1.5rem;
-    background-color: #e3d3ff;
+    background-color: $color-principal;
     padding: 10px;
     margin: 10px;
     border: #e3d3ff solid 3px;
@@ -11,19 +11,19 @@
     border-radius: 50px;
 }
 .preguntas__2r {
-    font-family: 'Rubik', sans-serif; 
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1.5rem;
-    background-color: #e3d3ff;
+    background-color: $color-principal;
     padding: 10px;
     margin: 10px;
-    border: #e3d3ff solid 3px;
+    border: $color-principal solid 3px;
     display: block;
     width: max-content;
     height: max-content;
     border-radius: 50px;
 }
 .respuestas {
-    font-family:'Rubik', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     padding: 10px;
     margin: 10px;
@@ -34,7 +34,7 @@
 }
 .mapita {
     border: solid 2px pink;
-    background-color: #e3d3ff;
+    background-color: $color-principal;
     padding: 10px;
     height: max-content;
     width: max-content;
@@ -48,11 +48,11 @@
 }
 
 .mapita__p {
-    font-family: 'Rubik', sans-serif; 
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1.5rem;
     background-color: pink;
     padding: 10px;
-    border: #e3d3ff solid 3px;
+    border: $color-principal solid 3px;
     display: block;
     width: max-content;
     height: max-content;

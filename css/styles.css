@@ -15,6 +15,7 @@ h1 {
   font-size: 3rem;
   margin: 0;
   padding: 10px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 h2 {
@@ -23,11 +24,14 @@ h2 {
   border: #e3d3ff solid 3px;
   margin: 0;
   padding: 10px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.scale-up-hor-left {
-  -webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+.menu {
+  font-size: 40px;
+  color: blueviolet;
+  text-decoration: none;
+  display: block;
 }
 
 .backgroundPurpHeader {
@@ -35,7 +39,7 @@ h2 {
   padding: 3px;
   margin: 0;
   border: #e3d3ff solid 3px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   position: sticky;
   width: 100vw;
   z-index: 10;
@@ -45,22 +49,149 @@ h2 {
   background: linear-gradient(90deg, #e3d3ff 48%, #ffc0c0 100%);
 }
 
+.menu {
+  display: none;
+}
+
+.jam {
+  display: none;
+}
+
+.box {
+  display: flex;
+  min-height: 150px;
+  justify-content: space-between;
+  align-content: center;
+  flex-flow: row wrap;
+}
+
+.box__son {
+  height: max-content;
+  width: max-content;
+  text-align: center;
+  line-height: 80px;
+  padding: 1rem;
+  margin: 1rem;
+  list-style: none;
+}
+
+.box__son--h1 {
+  height: max-content;
+  width: max-content;
+  text-align: center;
+  line-height: 80px;
+  padding: 1rem;
+  margin: 1rem;
+  list-style: none;
+  color: black;
+  -webkit-text-stroke: 2px black;
+  color: white;
+  font-size: 3rem;
+}
+
+.box__link {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  font-size: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  display: inline-block;
+  width: 25%;
+  position: relative;
+  font-size: 2rem;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}
+
+ul ul li {
+  display: block;
+}
+
+ul li:hover ul {
+  display: block;
+  background-color: white;
+  border: #e3d3ff solid 3px;
+  padding: 5px;
+  margin: 0;
+  border-style: dotted;
+  transform: scale(2px);
+}
+
 .backgroundPurpFooter {
   background-color: #e3d3ff;
   padding: 3px;
   margin: 0;
   border: whitesmoke solid 3px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   width: 100vw;
   top: 0;
   left: 0;
 }
 
-.menu {
-  font-size: 40px;
-  color: blueviolet;
-  text-decoration: none;
+.boxes {
+  padding: 5px;
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  height: 40px;
+  border: solid 1px;
+  border-radius: 20px;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  padding: 3px;
+  margin: 10px;
+  border: solid 1px;
+  border-radius: 50px;
+}
+
+.preguntas__footer {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+  background-color: #e3d3ff;
+  padding: 10px;
+  margin: 10px;
+  border: #e3d3ff solid 3px;
   display: block;
+  width: max-content;
+  height: max-content;
+  border-radius: 50px;
+}
+
+.whatsapp {
+  position: fixed;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  background-color: #e3d3ff;
+  color: antiquewhite;
+  width: max-content;
+  height: max-content;
+}
+
+.icono__whatsapp {
+  color: green;
+  margin: 5px;
+  padding: 3px;
+}
+
+.icono__insta {
+  color: palevioletred;
+  margin: 5px;
+  padding: 3px;
 }
 
 .fotos {
@@ -129,201 +260,6 @@ h2 {
   }
 }
 
-.menu {
-  display: none;
-}
-
-.jam {
-  display: none;
-}
-
-.preguntas {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.5rem;
-  background-color: #e3d3ff;
-  padding: 10px;
-  margin: 10px;
-  border: #e3d3ff solid 3px;
-  display: block;
-  width: max-content;
-  height: max-content;
-  border-radius: 50px;
-}
-
-.preguntas__2r {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.5rem;
-  background-color: #e3d3ff;
-  padding: 10px;
-  margin: 10px;
-  border: #e3d3ff solid 3px;
-  display: block;
-  width: max-content;
-  height: max-content;
-  border-radius: 50px;
-}
-
-.preguntas__footer {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.5rem;
-  background-color: #e3d3ff;
-  padding: 10px;
-  margin: 10px;
-  border: #e3d3ff solid 3px;
-  display: block;
-  width: max-content;
-  height: max-content;
-  border-radius: 50px;
-}
-
-.respuestas {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
-  padding: 10px;
-  margin: 10px;
-  border: pink solid 1px;
-  width: max-content;
-  height: max-content;
-  border-radius: 50px;
-}
-
-.mapita {
-  border: solid 2px pink;
-  background-color: #e3d3ff;
-  padding: 10px;
-  height: max-content;
-  width: max-content;
-  text-align: center;
-  display: block;
-}
-
-.iframe {
-  width: 450px;
-  height: 450px;
-}
-
-.mapita__p {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.5rem;
-  background-color: pink;
-  padding: 10px;
-  border: #e3d3ff solid 3px;
-  display: block;
-  width: max-content;
-  height: max-content;
-  color: white;
-  -webkit-text-stroke: 1.5px black;
-}
-
-.icono__whatsapp {
-  color: green;
-  margin: 5px;
-  padding: 3px;
-}
-
-.icono__insta {
-  color: palevioletred;
-  margin: 5px;
-  padding: 3px;
-}
-
-.boxes {
-  padding: 5px;
-  display: inline-block;
-  margin: 10px;
-  width: 200px;
-  height: 40px;
-  border: solid 1px;
-  border-radius: 20px;
-}
-
-.boxes__consulta {
-  padding: 5px;
-  display: block;
-  width: 200px;
-  height: 150px;
-  margin: 10px;
-  border: solid 1px;
-  border-radius: 20px;
-}
-
-.button {
-  width: 100px;
-  height: 40px;
-  padding: 3px;
-  margin: 10px;
-  border: solid 1px;
-  border-radius: 50px;
-}
-
-.box {
-  display: flex;
-  min-height: 150px;
-  justify-content: space-between;
-  align-content: center;
-  flex-flow: row wrap;
-}
-
-.box__son {
-  height: max-content;
-  width: max-content;
-  text-align: center;
-  line-height: 80px;
-  padding: 1rem;
-  margin: 1rem;
-  list-style: none;
-}
-
-.box__son--h1 {
-  height: max-content;
-  width: max-content;
-  text-align: center;
-  line-height: 80px;
-  padding: 1rem;
-  margin: 1rem;
-  list-style: none;
-  color: black;
-  -webkit-text-stroke: 2px black;
-  color: white;
-  font-size: 3rem;
-}
-
-.box__link {
-  text-decoration: none;
-  padding: 5px;
-  color: black;
-}
-
-.box__son--1 {
-  border: red solid 2px;
-  height: max-content;
-  width: max-content;
-  text-align: center;
-  line-height: 80px;
-  padding: 10px;
-  order: 1;
-}
-
-.box__son--2 {
-  border: yellow solid 2px;
-  height: max-content;
-  width: max-content;
-  text-align: center;
-  line-height: 80px;
-  padding: 10px;
-  order: 2;
-}
-
-.box__son--3 {
-  border: green solid 2px;
-  height: max-content;
-  width: max-content;
-  text-align: center;
-  line-height: 80px;
-  padding: 10px;
-  order: 3;
-}
-
 .clase__producto {
   background-color: pink;
   margin-bottom: 10px;
@@ -342,7 +278,7 @@ h2 {
 }
 
 .producto__titulo {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 2rem;
   text-align: center;
   padding: 5px;
@@ -350,7 +286,7 @@ h2 {
 }
 
 .producto__nombre {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 1.5rem;
   padding: 10px;
   margin: 10px;
@@ -361,7 +297,7 @@ h2 {
 }
 
 .producto__precio {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 1.5rem;
   padding: 10px;
   margin: 10px;
@@ -374,57 +310,13 @@ h2 {
   position: relative;
 }
 
-.whatsapp {
-  position: fixed;
-  display: inline-block;
-  bottom: 0;
-  right: 0;
-  background-color: #e3d3ff;
-  color: antiquewhite;
-  width: max-content;
-  height: max-content;
-}
-
-ul {
-  list-style: none;
-  font-size: 0;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-li {
-  display: inline-block;
-  width: 25%;
-  position: relative;
-  font-size: 2rem;
-}
-
-ul ul {
-  position: absolute;
-  display: none;
-}
-
-ul ul li {
-  display: block;
-}
-
-ul li:hover ul {
-  display: block;
-  background-color: white;
-  border: #e3d3ff solid 3px;
-  padding: 5px;
-  margin: 0;
-  border-style: dotted;
-  transform: scale(2px);
-}
-
 .grid {
   border: #e3d3ff solid 2px;
   padding: 1rem;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 50% 50%;
-  grid-template-areas: "ele1 ele1 ele2"  "ele3 ele4 ele4";
+  grid-template-areas: "ele1 ele1 ele2"  "ele3 ele4 ele4";
 }
 
 .grid__productos {
@@ -433,7 +325,7 @@ ul li:hover ul {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
-  grid-template-areas: "ele1 ele2 ele3"  "ele4 ele5 ele6" "ele7 ele8 ele9"  "ele10 ele11 ele12" "ele13 ele14 ele15"  "ele16 ele17 ele18";
+  grid-template-areas: "ele1 ele2 ele3"  "ele4 ele5 ele6" "ele7 ele8 ele9"  "ele10 ele11 ele12" "ele13 ele14 ele15"  "ele16 ele17 ele18";
 }
 
 .grid__hijo {
@@ -575,6 +467,277 @@ ul li:hover ul {
   align-items: center;
 }
 
+.preguntas {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+  background-color: #e3d3ff;
+  padding: 10px;
+  margin: 10px;
+  border: #e3d3ff solid 3px;
+  display: block;
+  width: max-content;
+  height: max-content;
+  border-radius: 50px;
+}
+
+.preguntas__2r {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+  background-color: #e3d3ff;
+  padding: 10px;
+  margin: 10px;
+  border: #e3d3ff solid 3px;
+  display: block;
+  width: max-content;
+  height: max-content;
+  border-radius: 50px;
+}
+
+.respuestas {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px;
+  border: pink solid 1px;
+  width: max-content;
+  height: max-content;
+  border-radius: 50px;
+}
+
+.mapita {
+  border: solid 2px pink;
+  background-color: #e3d3ff;
+  padding: 10px;
+  height: max-content;
+  width: max-content;
+  text-align: center;
+  display: block;
+}
+
+.iframe {
+  width: 450px;
+  height: 450px;
+}
+
+.mapita__p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+  background-color: pink;
+  padding: 10px;
+  border: #e3d3ff solid 3px;
+  display: block;
+  width: max-content;
+  height: max-content;
+  color: white;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.boxes__consulta {
+  padding: 5px;
+  display: block;
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  border: solid 1px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .fotos {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+  }
+  .fotos__pink {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+  }
+  .box__son {
+    line-height: 20px;
+    padding: 5px;
+    margin: 5px;
+    color: blueviolet;
+    font-size: 35px;
+  }
+  .box__son--h1 {
+    font-size: 2.6rem;
+  }
+  .box__link {
+    color: white;
+    font-size: 25px;
+    display: flex;
+  }
+  .boxes {
+    width: 200px;
+    height: 35px;
+    border-radius: 25px;
+  }
+  .button {
+    height: 35px;
+    border-radius: 25px;
+  }
+  .preguntas {
+    font-size: 20px;
+    display: flex;
+    width: max-content;
+    border-radius: 25px;
+  }
+  .preguntas__footer {
+    font-size: 20px;
+    width: 400px;
+    border-radius: 25px;
+  }
+  .preguntas__2r {
+    font-size: 20px;
+    display: inline-block;
+    width: max-content;
+    border-radius: 25px;
+    height: max-content;
+  }
+  .respuestas {
+    width: 300px;
+    height: max-content;
+    border-radius: 25px;
+  }
+  .nav {
+    display: none;
+  }
+  #lateral {
+    display: block;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    transition: left 1s;
+  }
+  #lateral:target {
+    left: 0;
+  }
+  .nav__lista {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .grid__hijo {
+    width: 400px;
+    height: 450px;
+    padding: 2px;
+    border-radius: 5%;
+  }
+  .producto__nombre {
+    font-size: 20px;
+    padding: 2px;
+  }
+  .producto__precio {
+    font-size: 20px;
+    padding: 2px;
+  }
+  .grid__productos {
+    padding: 2px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1%;
+    grid-template-areas: "ele1 ele2"  "ele3 ele4" "ele5 ele6"  "ele7 ele8" "ele9 ele10"  "ele11 ele12" "ele13 ele14" "ele15 ele16" "ele17 ele18";
+  }
+  .grid {
+    padding: 2px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ele1 ele2"  "ele3 ele4";
+  }
+  .grid__nuevo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transform: translate(-50%);
+    width: 75px;
+    height: max-content;
+    font-size: 10px;
+  }
+  .menu {
+    display: flex;
+  }
+  .jam {
+    display: flex;
+  }
+  .icono__whatsapp {
+    color: green;
+    margin: 5px;
+    padding: 3px;
+  }
+  .icono__insta {
+    color: palevioletred;
+    margin: 5px;
+    padding: 3px;
+  }
+  .carrusel {
+    width: 400px;
+    height: 750px;
+  }
+  .fondo__reseñas {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  .iframe {
+    width: 250px;
+    height: 250px;
+  }
+  .mapita__p {
+    font-size: 20px;
+    width: 400px;
+    color: black;
+  }
+  ul {
+    display: block;
+  }
+  li {
+    display: block;
+    width: 25%;
+    position: relative;
+    font-size: 2rem;
+  }
+  ul ul {
+    position: relative;
+    display: block;
+  }
+  ul ul li {
+    display: block;
+    position: relative;
+  }
+  ul li ul {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: #e3d3ff solid 3px;
+    padding: 5px;
+    margin: 0;
+    border-style: dotted;
+    transform: scale(2px);
+    position: relative;
+  }
+  .fondo__reseñas {
+    width: 300px;
+    height: 150px;
+  }
+  .carrito {
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 2px;
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .fotos {
     width: 120px;
@@ -675,13 +838,13 @@ ul li:hover ul {
     padding: 2px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1%;
-    grid-template-areas: "ele1 ele2"  "ele3 ele4" "ele5 ele6"  "ele7 ele8" "ele9 ele10"  "ele11 ele12" "ele13 ele14" "ele15 ele16" "ele17 ele18";
+    grid-template-areas: "ele1 ele2"  "ele3 ele4" "ele5 ele6"  "ele7 ele8" "ele9 ele10"  "ele11 ele12" "ele13 ele14" "ele15 ele16" "ele17 ele18";
   }
   .grid {
     padding: 2px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    grid-template-areas: "ele1 ele2"  "ele3 ele4";
+    grid-template-areas: "ele1 ele2"  "ele3 ele4";
   }
   .grid__nuevo {
     position: absolute;

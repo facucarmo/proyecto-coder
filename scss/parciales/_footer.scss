@@ -1,9 +1,9 @@
 .backgroundPurpFooter {
-    background-color: #e3d3ff;
+    background-color: $color-principal;
     padding: 3px;
     margin: 0;
     border: whitesmoke solid 3px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     width: 100vw;
     top: 0;
     left: 0;
@@ -26,12 +26,12 @@
     border-radius: 50px;
 }
 .preguntas__footer {
-    font-family: 'Rubik', sans-serif; 
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1.5rem;
-    background-color: #e3d3ff;
+    background-color: $color-principal;
     padding: 10px;
     margin: 10px;
-    border: #e3d3ff solid 3px;
+    border: $color-principal solid 3px;
     display: block;
     width: max-content;
     height: max-content;
@@ -42,7 +42,7 @@
     display: inline-block;
     bottom: 0;
     right: 0;
-    background-color: #e3d3ff;
+    background-color: $color-principal;
     color: antiquewhite;
     width: max-content;
     height: max-content;
