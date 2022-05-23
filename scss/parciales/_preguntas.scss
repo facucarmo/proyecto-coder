@@ -1,5 +1,5 @@
 .preguntas {
-    font-family: 'Noto Sans', sans-serif; 
+    font-family: $font-family;
     font-size: 1.5rem;
     background-color: $color-principal;
     padding: 10px;
@@ -11,7 +11,7 @@
     border-radius: 50px;
 }
 .preguntas__2r {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: $font-family;
     font-size: 1.5rem;
     background-color: $color-principal;
     padding: 10px;
@@ -23,7 +23,7 @@
     border-radius: 50px;
 }
 .respuestas {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: $font-family;
     font-size: 1rem;
     padding: 10px;
     margin: 10px;
@@ -34,7 +34,7 @@
 }
 .mapita {
     border: solid 2px pink;
-    background-color: $color-principal;
+    background-color: pink;
     padding: 10px;
     height: max-content;
     width: max-content;
@@ -48,7 +48,7 @@
 }
 
 .mapita__p {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: $font-family;
     font-size: 1.5rem;
     background-color: pink;
     padding: 10px;
@@ -57,7 +57,7 @@
     width: max-content;
     height: max-content;
     color: white;
-    -webkit-text-stroke: 1.5px black;
+    -webkit-text-stroke: 1px black;
 }
 .boxes__consulta {
     padding: 5px;

@@ -12,10 +12,10 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
   padding: 10px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 h2 {
@@ -24,7 +24,7 @@ h2 {
   border: #e3d3ff solid 3px;
   margin: 0;
   padding: 10px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .menu {
@@ -38,10 +38,10 @@ h2 {
   background-color: #e3d3ff;
   padding: 3px;
   margin: 0;
-  border: #e3d3ff solid 3px;
-  font-family: 'Noto Sans', sans-serif;
+  border: #ab9dec solid 3px;
+  font-family: "Noto Sans", sans-serif;
   position: sticky;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
   top: 0;
   left: 0;
@@ -69,9 +69,9 @@ h2 {
   height: max-content;
   width: max-content;
   text-align: center;
-  line-height: 80px;
-  padding: 1rem;
-  margin: 1rem;
+  line-height: 70px;
+  padding: 5px;
+  margin: 15px;
   list-style: none;
 }
 
@@ -79,9 +79,9 @@ h2 {
   height: max-content;
   width: max-content;
   text-align: center;
-  line-height: 80px;
-  padding: 1rem;
-  margin: 1rem;
+  line-height: 70px;
+  padding: 5px;
+  margin: 15px;
   list-style: none;
   color: black;
   -webkit-text-stroke: 2px black;
@@ -92,7 +92,13 @@ h2 {
 .box__link {
   text-decoration: none;
   padding: 5px;
-  color: black;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  display: inline-block;
+}
+
+.box__link:hover {
+  color: pink;
 }
 
 ul {
@@ -133,8 +139,8 @@ ul li:hover ul {
   padding: 3px;
   margin: 0;
   border: whitesmoke solid 3px;
-  font-family: 'Noto Sans', sans-serif;
-  width: 100vw;
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
   top: 0;
   left: 0;
 }
@@ -159,7 +165,7 @@ ul li:hover ul {
 }
 
 .preguntas__footer {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
   background-color: #e3d3ff;
   padding: 10px;
@@ -186,12 +192,14 @@ ul li:hover ul {
   color: green;
   margin: 5px;
   padding: 3px;
+  display: inline;
 }
 
 .icono__insta {
   color: palevioletred;
   margin: 5px;
   padding: 3px;
+  display: inline;
 }
 
 .fotos {
@@ -265,9 +273,9 @@ ul li:hover ul {
   margin-bottom: 10px;
   padding: 2rem;
   font-size: 2.5rem;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 1.5px black;
   color: white;
-  width: 100vw;
+  width: 100%;
 }
 
 .producto {
@@ -278,15 +286,17 @@ ul li:hover ul {
 }
 
 .producto__titulo {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 2rem;
   text-align: center;
   padding: 5px;
   background-color: #e3d3ff;
+  -webkit-text-stroke: 1px black;
+  color: whitesmoke;
 }
 
 .producto__nombre {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
   padding: 10px;
   margin: 10px;
@@ -297,7 +307,7 @@ ul li:hover ul {
 }
 
 .producto__precio {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
   padding: 10px;
   margin: 10px;
@@ -468,7 +478,7 @@ ul li:hover ul {
 }
 
 .preguntas {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
   background-color: #e3d3ff;
   padding: 10px;
@@ -481,7 +491,7 @@ ul li:hover ul {
 }
 
 .preguntas__2r {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
   background-color: #e3d3ff;
   padding: 10px;
@@ -494,7 +504,7 @@ ul li:hover ul {
 }
 
 .respuestas {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   padding: 10px;
   margin: 10px;
@@ -506,7 +516,7 @@ ul li:hover ul {
 
 .mapita {
   border: solid 2px pink;
-  background-color: #e3d3ff;
+  background-color: pink;
   padding: 10px;
   height: max-content;
   width: max-content;
@@ -520,7 +530,7 @@ ul li:hover ul {
 }
 
 .mapita__p {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
   background-color: pink;
   padding: 10px;
@@ -529,7 +539,7 @@ ul li:hover ul {
   width: max-content;
   height: max-content;
   color: white;
-  -webkit-text-stroke: 1.5px black;
+  -webkit-text-stroke: 1px black;
 }
 
 .boxes__consulta {
@@ -886,13 +896,16 @@ ul li:hover ul {
     width: 200px;
     height: 200px;
   }
+  .mapita {
+    width: 300px;
+  }
   .iframe {
     width: 250px;
     height: 250px;
   }
   .mapita__p {
     font-size: 20px;
-    width: 400px;
+    width: 250px;
     color: black;
   }
   ul {
