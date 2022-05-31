@@ -1,5 +1,5 @@
 .fotos {
-    width: 400px;
+    width: $ancho*4;
     height: 400px;
     border: $color-principal solid 3px;
     margin: 2px;
@@ -16,7 +16,7 @@
    transition: all 1s;
 }
 .fotos__pink {
-    width: 400px;
+    width: $ancho*4;
     height: 400px;
     border: pink solid 3px;
     margin: 2px;
@@ -33,7 +33,7 @@
     transition: all 1s;
  }
 .fotos__carrusel {
-    width: 400px;
+    width: $ancho*4;
     height: 750px;
     border: $color-principal solid 3px;
     margin: 2px;
@@ -46,7 +46,7 @@ background-color: rgba(0, 0, 0, 0.5);
 color: white;
 padding: 10px;
 border-radius: 10px;
-width: 500px;
+width: $ancho*5;
 height: max-content;
 }
 
@@ -85,7 +85,7 @@ height: max-content;
 
 .producto__nombre {
 font-family: $font-family;
-font-size: 1.5rem;
+font-size: 1.7rem;
 padding: 10px;
 margin: 10px;
 text-align: center;
@@ -133,7 +133,6 @@ position: relative;
     "ele13 ele14 ele15" 
     "ele16 ele17 ele18";
 }
-
 .grid__hijo {
     margin: 1rem;
     border: $color-principal solid 1px;
@@ -160,15 +159,12 @@ grid-area: ele3;
 border: pink solid 2px;
 }
 .grid__hijo--4{
-background-color: pink;
+@extend .grid__hijo--1;
 grid-area: ele4;
-border: $color-principal solid 2px;
 }
 .grid__hijo--5{
-    background-color: pink;
+    @extend .grid__hijo--1;
     grid-area: ele5;
-    border: $color-principal solid 2px;
-    position: relative;
 }
 .grid__hijo--6{
     background-color: $color-principal;
@@ -181,15 +177,12 @@ border: $color-principal solid 2px;
     border: pink solid 2px;
 }
 .grid__hijo--8{
-    background-color: pink;
+    @extend .grid__hijo--1;
     grid-area: ele8;
-    border: $color-principal solid 2px;
 }
 .grid__hijo--9{
-    background-color: pink;
+    @extend .grid__hijo--1;
     grid-area: ele9;
-    border: $color-principal solid 2px;
-    position: relative;
 }
 .grid__hijo--10{
     background-color: $color-principal;
@@ -202,15 +195,12 @@ border: $color-principal solid 2px;
     border: pink solid 2px;
 }
 .grid__hijo--12{
-    background-color: pink;
+    @extend .grid__hijo--1;
     grid-area: ele12;
-    border: $color-principal solid 2px;
 }
 .grid__hijo--13{
-    background-color: pink;
+    @extend .grid__hijo--1;
     grid-area: ele13;
-    border: $color-principal solid 2px;
-    position: relative;
 }
 .grid__hijo--14{
     background-color: $color-principal;
@@ -223,15 +213,12 @@ border: $color-principal solid 2px;
     border: pink solid 2px;
 }
 .grid__hijo--16{
-    background-color: pink;
+    @extend .grid__hijo--1;
     grid-area: ele16;
-    border: $color-principal solid 2px;
 }
 .grid__hijo--17{
-    background-color: pink;
+    @extend .grid__hijo--1;
     grid-area: ele17;
-    border: $color-principal solid 2px;
-    position: relative;
 }
 .grid__hijo--18{
     background-color: $color-principal;

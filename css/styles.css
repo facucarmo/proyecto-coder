@@ -299,7 +299,7 @@ ul li:hover ul {
 
 .producto__nombre {
   font-family: "Noto Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 10px;
   margin: 10px;
   text-align: center;
@@ -349,7 +349,7 @@ ul li:hover ul {
   border-radius: 50px;
 }
 
-.grid__hijo--1 {
+.grid__hijo--1, .grid__hijo--4, .grid__hijo--5, .grid__hijo--8, .grid__hijo--9, .grid__hijo--12, .grid__hijo--13, .grid__hijo--16, .grid__hijo--17 {
   background-color: pink;
   grid-area: ele1;
   border: #e3d3ff solid 2px;
@@ -369,16 +369,11 @@ ul li:hover ul {
 }
 
 .grid__hijo--4 {
-  background-color: pink;
   grid-area: ele4;
-  border: #e3d3ff solid 2px;
 }
 
 .grid__hijo--5 {
-  background-color: pink;
   grid-area: ele5;
-  border: #e3d3ff solid 2px;
-  position: relative;
 }
 
 .grid__hijo--6 {
@@ -394,16 +389,11 @@ ul li:hover ul {
 }
 
 .grid__hijo--8 {
-  background-color: pink;
   grid-area: ele8;
-  border: #e3d3ff solid 2px;
 }
 
 .grid__hijo--9 {
-  background-color: pink;
   grid-area: ele9;
-  border: #e3d3ff solid 2px;
-  position: relative;
 }
 
 .grid__hijo--10 {
@@ -419,16 +409,11 @@ ul li:hover ul {
 }
 
 .grid__hijo--12 {
-  background-color: pink;
   grid-area: ele12;
-  border: #e3d3ff solid 2px;
 }
 
 .grid__hijo--13 {
-  background-color: pink;
   grid-area: ele13;
-  border: #e3d3ff solid 2px;
-  position: relative;
 }
 
 .grid__hijo--14 {
@@ -444,16 +429,11 @@ ul li:hover ul {
 }
 
 .grid__hijo--16 {
-  background-color: pink;
   grid-area: ele16;
-  border: #e3d3ff solid 2px;
 }
 
 .grid__hijo--17 {
-  background-color: pink;
   grid-area: ele17;
-  border: #e3d3ff solid 2px;
-  position: relative;
 }
 
 .grid__hijo--18 {

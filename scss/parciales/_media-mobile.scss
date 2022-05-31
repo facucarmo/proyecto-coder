@@ -129,7 +129,7 @@
         color: #fff;
         padding: 0.5rem 1rem;
       transform: translate(-50%);
-      width: 75px;
+      width: ($ancho/2)+25 ;
       height: max-content;
       font-size: 10px;
     }
@@ -165,12 +165,12 @@
             width: 300px;
         }
         .iframe {
-            width: 250px;
+            width: $ancho*2.5;
             height: 250px;
         }
         .mapita__p {
             font-size: 20px;
-            width: 250px;
+            width: $ancho*2.5;
             color: black;
 
         }
@@ -204,7 +204,7 @@
             position: relative;
         }
         .fondo__reseñas{
-            width: 300px;
+            width: $ancho*3;
             height: 150px;
             }
 

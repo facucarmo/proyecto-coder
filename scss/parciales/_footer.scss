@@ -12,13 +12,13 @@
     padding: 5px;
     display: inline-block;
     margin: 10px;
-    width: 200px;
+    width: $ancho*2;
     height: 40px;
     border: solid 1px;
     border-radius: 20px;
 }
 .button {
-    width: 100px;
+    width: $ancho;
     height: 40px;
     padding: 3px;
     margin: 10px;
