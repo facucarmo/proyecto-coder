@@ -27,14 +27,14 @@
     font-size: 1rem;
     padding: 10px;
     margin: 10px;
-    border: pink solid 1px;
+    border: $color-secundario solid 1px;
     width: max-content;
     height: max-content;
     border-radius: 50px;
 }
 .mapita {
-    border: solid 2px pink;
-    background-color: pink;
+    border: solid 2px $color-secundario;
+    background-color: $color-secundario;
     padding: 10px;
     height: max-content;
     width: max-content;
@@ -50,7 +50,7 @@
 .mapita__p {
     font-family: $font-family;
     font-size: 1.5rem;
-    background-color: pink;
+    background-color: $color-secundario;
     padding: 10px;
     border: $color-principal solid 3px;
     display: block;

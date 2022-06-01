@@ -14,25 +14,25 @@ h2 {
     font-family: $font-family;
 }
 .menu {
-    font-size:40px ;
-    color:blueviolet ;
+    font-size:50px ;
+    color: black; ;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+    padding: 30px 0 30px 30px;
 
 }
 .backgroundPurpHeader {
     background-color: $color-principal;
     padding: 3px;
     margin: 0;
-    border: #ab9dec solid 3px;
+    border: #9381e7 solid 3px;
     font-family: $font-family;
     position: sticky;
     width: 100%;
     z-index: 10;
     top: 0;
     left: 0;    
-    background: rgb(227,211,255);
-    background: linear-gradient(90deg, rgba(227,211,255,1) 48%, rgba(255,192,192,1) 100%);
+    background-color: $color-principal;
 }
 .menu{
     display: none;
@@ -77,10 +77,10 @@ h2 {
     padding: 5px;
     color: white;
     -webkit-text-stroke: 1px black;
-    display: inline-block;
+    display: flex;
 }
 .box__link:hover {
-    color: pink;
+    color: $color-secundario;
 }
 ul {
     list-style: none;

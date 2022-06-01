@@ -7,8 +7,6 @@
     border-radius: 10%;
     object-fit: cover;
     display: inline-block;
-    animation-name: fotitos;
-    animation-duration: 2s;
 }
 .fotos:hover {
    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.5);
@@ -18,14 +16,13 @@
 .fotos__pink {
     width: $ancho*4;
     height: 400px;
-    border: pink solid 3px;
+    border: $color-secundario solid 3px;
     margin: 2px;
     padding: 2px;
     border-radius: 10%;
     object-fit: cover;
     display: inline-block;
-    animation-name: fotitos;
-    animation-duration: 1s;
+
 }
 .fotos__pink:hover {
     box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.5);
@@ -38,7 +35,7 @@
     border: $color-principal solid 3px;
     margin: 2px;
     padding: 2px;
-    object-fit: cover;
+    object-fit:cover;
     display: inline-block;
 }
 .fondo__reseñas{
@@ -49,16 +46,8 @@ border-radius: 10px;
 width: $ancho*5;
 height: max-content;
 }
-
-@keyframes fotitos {
-    0% {transform: scale(1.0)}
-
-    100% {transform: scale(1.1);}
-    
-
-}
 .clase__producto {
-    background-color: pink;
+    background-color: $color-secundario;
     margin-bottom: 10px;
     padding: 2rem;
     font-size: 2.5rem;
@@ -91,21 +80,20 @@ margin: 10px;
 text-align: center;
 width: max-content;
 height: max-content;
-align-items: center;
+margin-left: auto;
+margin-right: auto;
 }
 
 .producto__precio {
 font-family: $font-family;
 font-size: 1.5rem;
-padding: 10px;
 margin: 10px;
 text-align: center;
 width: max-content;
 height: max-content;
-border:$color-principal 3px solid;
-border-radius: 5px;
-border-style: dotted;
 position: relative;
+margin-left: auto;
+margin-right: auto;
 }
 
 .grid{
@@ -143,7 +131,7 @@ position: relative;
 }
 
 .grid__hijo--1{
-background-color: pink;
+background-color: $color-secundario;
 grid-area: ele1;
 border: $color-principal solid 2px;
 position: relative;
@@ -151,12 +139,12 @@ position: relative;
 .grid__hijo--2{
 background-color: $color-principal;
 grid-area: ele2;
-border: pink solid 2px;
+border: $color-secundario solid 2px;
 }
 .grid__hijo--3{
 background-color: $color-principal;
 grid-area: ele3;
-border: pink solid 2px;
+border: $color-secundario solid 2px;
 }
 .grid__hijo--4{
 @extend .grid__hijo--1;
@@ -169,12 +157,12 @@ grid-area: ele4;
 .grid__hijo--6{
     background-color: $color-principal;
     grid-area: ele6;
-    border: pink solid 2px;
+    border: $color-secundario solid 2px;
 }
 .grid__hijo--7{
     background-color: $color-principal;
     grid-area: ele7;
-    border: pink solid 2px;
+    border: $color-secundario solid 2px;
 }
 .grid__hijo--8{
     @extend .grid__hijo--1;
@@ -187,12 +175,12 @@ grid-area: ele4;
 .grid__hijo--10{
     background-color: $color-principal;
     grid-area: ele10;
-    border: pink solid 2px;
+    border: $color-secundario solid 2px;
 }
 .grid__hijo--11{
     background-color: $color-principal;
     grid-area: ele11;
-    border: pink solid 2px;
+    border: $color-secundario solid 2px;
 }
 .grid__hijo--12{
     @extend .grid__hijo--1;
@@ -205,12 +193,12 @@ grid-area: ele4;
 .grid__hijo--14{
     background-color: $color-principal;
     grid-area: ele14;
-    border: pink solid 2px;
+    border: $color-secundario solid 2px;
 }
 .grid__hijo--15{
     background-color: $color-principal;
     grid-area: ele15;
-    border: pink solid 2px;
+    border: $color-secundario solid 2px;
 }
 .grid__hijo--16{
     @extend .grid__hijo--1;
@@ -223,7 +211,7 @@ grid-area: ele4;
 .grid__hijo--18{
     background-color: $color-principal;
     grid-area: ele18;
-    border: pink solid 2px;
+    border: $color-secundario solid 2px;
 }
              
 .grid__nuevo {

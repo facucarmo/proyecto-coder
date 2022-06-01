@@ -23,32 +23,32 @@ h1 {
 h2 {
   text-align: center;
   font-size: 2rem;
-  border: #e3d3ff solid 3px;
+  border: #ab9dec solid 3px;
   margin: 0;
   padding: 10px;
   font-family: "Noto Sans", sans-serif;
 }
 
 .menu {
-  font-size: 40px;
-  color: blueviolet;
+  font-size: 50px;
+  color: black;
   text-decoration: none;
-  display: block;
+  display: inline-block;
+  padding: 30px 0 30px 30px;
 }
 
 .backgroundPurpHeader {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   padding: 3px;
   margin: 0;
-  border: #ab9dec solid 3px;
+  border: #9381e7 solid 3px;
   font-family: "Noto Sans", sans-serif;
   position: sticky;
   width: 100%;
   z-index: 10;
   top: 0;
   left: 0;
-  background: #e3d3ff;
-  background: linear-gradient(90deg, #e3d3ff 48%, #ffc0c0 100%);
+  background-color: #ab9dec;
 }
 
 .menu {
@@ -96,11 +96,11 @@ h2 {
   padding: 5px;
   color: white;
   -webkit-text-stroke: 1px black;
-  display: inline-block;
+  display: flex;
 }
 
 .box__link:hover {
-  color: pink;
+  color: #ea9999;
 }
 
 ul {
@@ -129,7 +129,7 @@ ul ul li {
 ul li:hover ul {
   display: block;
   background-color: white;
-  border: #e3d3ff solid 3px;
+  border: #ab9dec solid 3px;
   padding: 5px;
   margin: 0;
   border-style: dotted;
@@ -137,7 +137,7 @@ ul li:hover ul {
 }
 
 .backgroundPurpFooter {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   padding: 3px;
   margin: 0;
   border: whitesmoke solid 3px;
@@ -169,10 +169,10 @@ ul li:hover ul {
 .preguntas__footer {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   padding: 10px;
   margin: 10px;
-  border: #e3d3ff solid 3px;
+  border: #ab9dec solid 3px;
   display: block;
   width: max-content;
   height: max-content;
@@ -184,7 +184,7 @@ ul li:hover ul {
   display: inline-block;
   bottom: 0;
   right: 0;
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   color: antiquewhite;
   width: max-content;
   height: max-content;
@@ -207,14 +207,12 @@ ul li:hover ul {
 .fotos {
   width: 400px;
   height: 400px;
-  border: #e3d3ff solid 3px;
+  border: #ab9dec solid 3px;
   margin: 2px;
   padding: 2px;
   border-radius: 10%;
   object-fit: cover;
   display: inline-block;
-  animation-name: fotitos;
-  animation-duration: 2s;
 }
 
 .fotos:hover {
@@ -226,14 +224,12 @@ ul li:hover ul {
 .fotos__pink {
   width: 400px;
   height: 400px;
-  border: pink solid 3px;
+  border: #ea9999 solid 3px;
   margin: 2px;
   padding: 2px;
   border-radius: 10%;
   object-fit: cover;
   display: inline-block;
-  animation-name: fotitos;
-  animation-duration: 1s;
 }
 
 .fotos__pink:hover {
@@ -245,7 +241,7 @@ ul li:hover ul {
 .fotos__carrusel {
   width: 400px;
   height: 750px;
-  border: #e3d3ff solid 3px;
+  border: #ab9dec solid 3px;
   margin: 2px;
   padding: 2px;
   object-fit: cover;
@@ -261,17 +257,8 @@ ul li:hover ul {
   height: max-content;
 }
 
-@keyframes fotitos {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-
 .clase__producto {
-  background-color: pink;
+  background-color: #ea9999;
   margin-bottom: 10px;
   padding: 2rem;
   font-size: 2.5rem;
@@ -283,7 +270,7 @@ ul li:hover ul {
 .producto {
   display: inline-block;
   margin: 3rem;
-  border: #e3d3ff solid 1px;
+  border: #ab9dec solid 1px;
   padding: 25px;
 }
 
@@ -292,7 +279,7 @@ ul li:hover ul {
   font-size: 2rem;
   text-align: center;
   padding: 5px;
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   -webkit-text-stroke: 1px black;
   color: whitesmoke;
 }
@@ -305,25 +292,24 @@ ul li:hover ul {
   text-align: center;
   width: max-content;
   height: max-content;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .producto__precio {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
-  padding: 10px;
   margin: 10px;
   text-align: center;
   width: max-content;
   height: max-content;
-  border: #e3d3ff 3px solid;
-  border-radius: 5px;
-  border-style: dotted;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid {
-  border: #e3d3ff solid 2px;
+  border: #ab9dec solid 2px;
   padding: 1rem;
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -332,7 +318,7 @@ ul li:hover ul {
 }
 
 .grid__productos {
-  border: #e3d3ff solid 2px;
+  border: #ab9dec solid 2px;
   padding: 1rem;
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -342,7 +328,7 @@ ul li:hover ul {
 
 .grid__hijo {
   margin: 1rem;
-  border: #e3d3ff solid 1px;
+  border: #ab9dec solid 1px;
   padding: 25px;
   align-content: center;
   text-align: center;
@@ -350,22 +336,22 @@ ul li:hover ul {
 }
 
 .grid__hijo--1, .grid__hijo--4, .grid__hijo--5, .grid__hijo--8, .grid__hijo--9, .grid__hijo--12, .grid__hijo--13, .grid__hijo--16, .grid__hijo--17 {
-  background-color: pink;
+  background-color: #ea9999;
   grid-area: ele1;
-  border: #e3d3ff solid 2px;
+  border: #ab9dec solid 2px;
   position: relative;
 }
 
 .grid__hijo--2 {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   grid-area: ele2;
-  border: pink solid 2px;
+  border: #ea9999 solid 2px;
 }
 
 .grid__hijo--3 {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   grid-area: ele3;
-  border: pink solid 2px;
+  border: #ea9999 solid 2px;
 }
 
 .grid__hijo--4 {
@@ -377,15 +363,15 @@ ul li:hover ul {
 }
 
 .grid__hijo--6 {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   grid-area: ele6;
-  border: pink solid 2px;
+  border: #ea9999 solid 2px;
 }
 
 .grid__hijo--7 {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   grid-area: ele7;
-  border: pink solid 2px;
+  border: #ea9999 solid 2px;
 }
 
 .grid__hijo--8 {
@@ -397,15 +383,15 @@ ul li:hover ul {
 }
 
 .grid__hijo--10 {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   grid-area: ele10;
-  border: pink solid 2px;
+  border: #ea9999 solid 2px;
 }
 
 .grid__hijo--11 {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   grid-area: ele11;
-  border: pink solid 2px;
+  border: #ea9999 solid 2px;
 }
 
 .grid__hijo--12 {
@@ -417,15 +403,15 @@ ul li:hover ul {
 }
 
 .grid__hijo--14 {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   grid-area: ele14;
-  border: pink solid 2px;
+  border: #ea9999 solid 2px;
 }
 
 .grid__hijo--15 {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   grid-area: ele15;
-  border: pink solid 2px;
+  border: #ea9999 solid 2px;
 }
 
 .grid__hijo--16 {
@@ -437,9 +423,9 @@ ul li:hover ul {
 }
 
 .grid__hijo--18 {
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   grid-area: ele18;
-  border: pink solid 2px;
+  border: #ea9999 solid 2px;
 }
 
 .grid__nuevo {
@@ -462,7 +448,7 @@ ul li:hover ul {
 .preguntas {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   padding: 10px;
   margin: 10px;
   border: #e3d3ff solid 3px;
@@ -475,10 +461,10 @@ ul li:hover ul {
 .preguntas__2r {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
-  background-color: #e3d3ff;
+  background-color: #ab9dec;
   padding: 10px;
   margin: 10px;
-  border: #e3d3ff solid 3px;
+  border: #ab9dec solid 3px;
   display: block;
   width: max-content;
   height: max-content;
@@ -490,15 +476,15 @@ ul li:hover ul {
   font-size: 1rem;
   padding: 10px;
   margin: 10px;
-  border: pink solid 1px;
+  border: #ea9999 solid 1px;
   width: max-content;
   height: max-content;
   border-radius: 50px;
 }
 
 .mapita {
-  border: solid 2px pink;
-  background-color: pink;
+  border: solid 2px #ea9999;
+  background-color: #ea9999;
   padding: 10px;
   height: max-content;
   width: max-content;
@@ -514,9 +500,9 @@ ul li:hover ul {
 .mapita__p {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
-  background-color: pink;
+  background-color: #ea9999;
   padding: 10px;
-  border: #e3d3ff solid 3px;
+  border: #ab9dec solid 3px;
   display: block;
   width: max-content;
   height: max-content;
@@ -711,7 +697,7 @@ ul li:hover ul {
   ul li ul {
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
-    border: #e3d3ff solid 3px;
+    border: #ab9dec solid 3px;
     padding: 5px;
     margin: 0;
     border-style: dotted;
@@ -742,11 +728,27 @@ ul li:hover ul {
     border-radius: 10%;
   }
   .box__son {
+    display: block;
     line-height: 20px;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
-    color: blueviolet;
     font-size: 35px;
+    background-color: #ab9dec;
+    border-radius: 5px;
+    border: #ab9dec 1px solid;
+    width: 90%;
+    text-align: center;
+  }
+  .box__son--cross {
+    display: block;
+    line-height: 20px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 35px;
+    background-color: #ab9dec;
+    border-radius: 5px;
+    width: max-content;
+    text-align: center;
   }
   .box__son--h1 {
     font-size: 2.6rem;
@@ -801,6 +803,7 @@ ul li:hover ul {
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 100;
     transition: left 1s;
+    border: solid 2px #ab9dec;
   }
   #lateral:target {
     left: 0;
@@ -910,7 +913,7 @@ ul li:hover ul {
   ul li ul {
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
-    border: #e3d3ff solid 3px;
+    border: #ab9dec solid 3px;
     padding: 5px;
     margin: 0;
     border-style: dotted;
