@@ -14,13 +14,14 @@
         display: block;
         line-height: 20px;
         padding: 10px;
-        margin: 5px;
         font-size: 35px ;
         background-color: $color-principal;
         border-radius: 5px;
         border: #ab9dec 1px solid;
         width: 90%;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+       
     }
     .box__son--cross {
         display: block;
@@ -32,6 +33,8 @@
         border-radius: 5px;
         width: max-content;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .box__son--h1 {
        font-size: 2.6rem;

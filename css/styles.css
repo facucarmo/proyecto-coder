@@ -731,13 +731,13 @@ ul li:hover ul {
     display: block;
     line-height: 20px;
     padding: 10px;
-    margin: 5px;
     font-size: 35px;
     background-color: #ab9dec;
     border-radius: 5px;
     border: #ab9dec 1px solid;
     width: 90%;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .box__son--cross {
     display: block;
@@ -749,6 +749,8 @@ ul li:hover ul {
     border-radius: 5px;
     width: max-content;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .box__son--h1 {
     font-size: 2.6rem;
