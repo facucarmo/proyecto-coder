@@ -791,7 +791,7 @@ ul li:hover ul {
   .menu {
     display: block;
     color: #FFFFFF;
-    margin: 20px;
+    margin: 10px;
   }
   .menu:hover {
     color: #f68a53;
@@ -861,7 +861,7 @@ ul li:hover ul {
     border-radius: 10%;
   }
   .grid__hijo {
-    width: 175px;
+    width: 160px;
     height: 275px;
     padding: 2px;
     border-radius: 5%;
@@ -929,7 +929,7 @@ ul li:hover ul {
     margin: 10px;
     border: #f68a53 solid 3px;
     display: block;
-    width: 350px;
+    width: 340px;
     height: max-content;
     border-radius: 25px;
     font-weight: bold;
