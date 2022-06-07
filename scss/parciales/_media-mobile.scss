@@ -1,5 +1,106 @@
 @media screen and (max-width: 600px) {
 
+    /* Header */
+
+.backgroundPurpHeader { 
+    display: inline-block;
+    width: 100%;
+}
+.box {
+    display: flex;
+  }
+.box__son {
+    display: block;
+    line-height: 20px;
+    padding: 10px;
+    font-size: 35px ;
+    background-color: $color-secundario;
+    border-radius: 5px;
+    border: $color-principal 1px solid;
+    margin-left: 0;
+    width: max-content;
+    height: max-content;
+   
+}
+.box__son--h1{
+margin: 5px 10px 10px 0;
+padding: 10px;
+font-size: 30px;
+
+}
+.box__link {
+    color: $color-principal;
+    font-size: 20px;   
+    display: flex;
+
+}
+.menu {
+    display: block;
+    color: $color-principal;
+    margin: 20px;
+}
+.menu:hover {
+    color: #f68a53;
+}
+.nav {
+    display: none;
+}
+#lateral {
+    display: block ;
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    transition: left 1s;
+    border: solid 2px $color-secundario;
+}
+#lateral:target {
+    left: 0;
+}
+ul {
+    display: block;
+}
+li{
+    display: block;
+    width: 10%;
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+}
+ul ul {
+    position: relative;
+    display: block;
+}
+
+ul ul li {
+    display: block;
+    position: relative;
+}
+
+ul li ul {
+    display:block;
+    background-color: rgba(0, 0, 0, 0.5);
+    border:$color-principal solid 3px;
+    padding: 5px;
+    margin: 5px;
+    border-style:inherit;
+    position: relative;
+}
+
+
+.nav__lista {
+    flex-direction: column;
+    display: flex;
+    margin: 10px;
+    gap: 1rem;
+    padding: 10px;
+    font-size: 10px;
+}
+    /*Productos*/
+
     .fotos {
         width: 120px;
         height: 120px;
@@ -10,113 +111,22 @@
         height: 120px;
         border-radius: 10%;
     }
-    .box__son {
-        display: block;
-        line-height: 20px;
-        padding: 10px;
-        font-size: 35px ;
-        background-color: $color-principal;
-        border-radius: 5px;
-        border: #ab9dec 1px solid;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-       
-    }
-    .box__son--cross {
-        display: block;
-        line-height: 20px;
-        padding: 10px;
-        margin: 5px;
-        font-size: 35px ;
-        background-color: #ab9dec;
-        border-radius: 5px;
-        width: max-content;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .box__son--h1 {
-       font-size: 2.6rem;
-    }
-    .box__link {
-        color: white;
-        font-size: 25px;   
-        display: flex;
-    }
-    .boxes {
-        width: 200px;
-        height: 35px;
-        border-radius: 25px;
-    }    
-    .button {
-        height: 35px;
-        border-radius:25px; ;
-    }
-    .preguntas {
-        font-size: 20px;
-        display: inline-block;
-        width: 300px;
-        border-radius: 25px;
-    }
-    .preguntas__footer {
-        font-size: 20px;
-        width: 300px;
-        border-radius: 25px;
-    }
-    .preguntas__2r {
-        font-size: 20px;
-        display: inline-block;
-        width: 300px;
-        border-radius:25px ;
-        height: max-content;
-    }
-    .respuestas {
-        width: 300px;
-        height: max-content;
-        border-radius: 25px;
-    }
-    .nav {
-        display: none;
-    }
-    #lateral {
-        display: block ;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: -100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        z-index: 100;
-        transition: left 1s;
-        border: solid 2px #ab9dec;
-    }
-    #lateral:target {
-        left: 0;
-    }
-
-
-
-    .nav__lista {
-        height: 100%;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
     .grid__hijo {
-        width: 140px;
-        height: 240px;
+        width: 175px;
+        height: 275px;
         padding: 2px;
         border-radius: 5%;
     }
     .producto__nombre {
-        font-size:10px ;
+        font-size:15px ;
         padding: 2px;
+        font-weight: bold;
+        width: max-content;
     }
     .producto__precio {
-        font-size: 10px; 
+        font-size: 15px; 
         padding:2px;
+        font-weight: bold;
     }
     .grid__productos{
         padding: 2px;
@@ -153,85 +163,107 @@
       height: max-content;
       font-size: 10px;
     }
-    .menu {
-        display: flex;
+    .clase__producto {
+        font-size: 1.7rem;
     }
-    .jam {
-        display: flex;
+    .producto__titulo {
+        font-size: 1.5rem;
+    }
+
+
+/*Preguntas Frecuentes*/
+.preguntas {
+    font-family: $font-family;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: $color-principal;
+    padding: 10px;
+    margin: 10px;
+    border: #f68a53 solid 3px;
+    display: block;
+    width: max-content;
+    height: max-content;
+    border-radius: 50px;
+}
+
+.preguntas__2r {
+    font-family: $font-family;
+    font-size: 1.1rem;
+    background-color: $color-principal;
+    padding: 10px;
+    margin: 10px;
+    border: #f68a53 solid 3px;
+    display: block;
+    width: 350px;
+    height: max-content;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.mapita {
+    border: solid 2px $color-secundario;
+    background-color: $color-principal;
+    padding: 10px;
+    height: 350px;
+    width: 320px;
+    text-align: center;
+    display: inline-block;
+    right: 0;
+}
+
+.iframe {
+    width: 250px;
+    height: 250px;
+}
+
+.mapita__p {
+    font-family: $font-family;
+    font-size: 1rem;
+    background-color: $color-secundario;
+    padding: 10px;
+    border: $color-principal solid 3px;
+    display: block;
+    width: 300px;
+    height: max-content;
+    color: white;
+}
+
+/*Footer*/
+.boxes {
+    width: 200px;
+    height: 35px;
+    border-radius: 25px;
+}    
+.button {
+    height: 35px;
+    border-radius:25px; ;
+}
+.preguntas__footer {
+    font-size: 20px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+.box__link--footer {
+    text-decoration: none;
+    display:inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 0%;
+    display: none;
+    }
+    .backgroundPurpFooter {
+        width: 100%;
     }
     .icono__whatsapp {
-        color: green;
-        margin: 5px;
-        padding: 3px;
+        color: $color-principal;
+        margin: 0;
+        padding: 0;
+       display: flex;
     }
     .icono__insta {
-        color: palevioletred;
-        margin: 5px;
-        padding: 3px;
+        color: $color-principal;
+        margin: 0;
+        padding: 0;
+        display: flex;
     }
-    .carrusel {
-        width: 400px;
-        height: 750px;
-    }
-    .fondo__reseñas{
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 10px;
-        border-radius: 10px;
-        width: 200px;
-        height: 200px;
-        }
-        .mapita {
-            width: 300px;
-        }
-        .iframe {
-            width: $ancho*2.5;
-            height: 250px;
-        }
-        .mapita__p {
-            font-size: 20px;
-            width: $ancho*2.5;
-            color: black;
-
-        }
-        ul {
-            display: block;
-        }
-        li{
-            display: block;
-            width: 25%;
-            position: relative;
-            font-size: 2rem;
-        }
-        ul ul {
-            position: relative;
-            display: block;
-        }
-        
-        ul ul li {
-            display: block;
-            position: relative;
-        }
-        
-        ul li ul {
-            display:block;
-            background-color: rgba(0, 0, 0, 0.5);
-            border:$color-principal solid 3px;
-            padding: 5px;
-            margin: 0;
-            border-style: dotted;
-            transform: scale(2px);
-            position: relative;
-        }
-        .fondo__reseñas{
-            width: $ancho*3;
-            height: 150px;
-            }
-
-        .carrito {
-                border-radius: 5px;
-                font-size: 10px;
-                padding: 2px;
-                position: relative;
-            }
 }

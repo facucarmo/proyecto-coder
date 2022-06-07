@@ -1,10 +1,11 @@
 .preguntas {
     font-family: $font-family;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     background-color: $color-principal;
     padding: 10px;
     margin: 10px;
-    border: #e3d3ff solid 3px;
+    border: #f68a53 solid 3px;
     display: block;
     width: max-content;
     height: max-content;
@@ -12,15 +13,16 @@
 }
 .preguntas__2r {
     font-family: $font-family;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background-color: $color-principal;
     padding: 10px;
     margin: 10px;
-    border: $color-principal solid 3px;
+    border: #f68a53 solid 3px;
     display: block;
     width: max-content;
     height: max-content;
     border-radius: 50px;
+    font-weight: bold;
 }
 .respuestas {
     font-family: $font-family;
@@ -31,15 +33,17 @@
     width: max-content;
     height: max-content;
     border-radius: 50px;
+    font-weight: bold;
 }
 .mapita {
     border: solid 2px $color-secundario;
-    background-color: $color-secundario;
+    background-color: $color-principal;
     padding: 10px;
     height: max-content;
     width: max-content;
     text-align: center;
-    display: block;
+    display: inline-block;
+    right: 0;
 }
 
 .iframe {
@@ -56,8 +60,9 @@
     display: block;
     width: max-content;
     height: max-content;
-    color: white;
-    -webkit-text-stroke: 1px black;
+    color: $color-principal;
+    font-weight: bold;
+    
 }
 .boxes__consulta {
     padding: 5px;
@@ -65,6 +70,32 @@
     width: 200px;
     height: 150px;
     margin: 10px;
-    border: solid 1px;
+    border: $color-secundario solid 1px;
     border-radius: 20px;
+    font-family: $font-family;
+    font-weight: bold;
+}
+.boxes {
+    padding: 15px;
+    display: inline-block;
+    margin: 10px;
+    width: $ancho*2;
+    height: 40px;
+    border: $color-secundario solid 2px;
+    color: $color-principal;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: $color-principal;
+}
+.button {
+    width: $ancho;
+    height: 40px;
+    padding: 3px;
+    margin: 10px;
+    display: inline-block;
+    border:  $color-secundario solid 2px;
+    color: $color-secundario;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: $color-principal;
 }

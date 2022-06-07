@@ -1,34 +1,34 @@
 .backgroundPurpFooter {
-    background-color: $color-principal;
+    background-color: $color-secundario;
     padding: 3px;
     margin: 0;
-    border: whitesmoke solid 3px;
+    border: $color-principal solid 3px;
     font-family: $font-family;
     width: 100%;
     top: 0;
     left: 0;
+    display: flex;
 }
-.boxes {
-    padding: 5px;
-    display: inline-block;
-    margin: 10px;
-    width: $ancho*2;
-    height: 40px;
-    border: solid 1px;
-    border-radius: 20px;
+.box__link--footer {
+text-decoration: none;
+color: $color-principal;
+display:flex;
+font-size: 25px;
+font-weight: bold;
+position: relative;
+margin-left: 670%;
+padding-top:20px;
 }
-.button {
-    width: $ancho;
-    height: 40px;
-    padding: 3px;
-    margin: 10px;
-    border:  solid 1px;
-    border-radius: 50px;
+.box__link--footer:hover {
+    color: #f68a53;
 }
+
+
 .preguntas__footer {
     font-family: $font-family;
     font-size: 1.5rem;
-    background-color: $color-principal;
+    font-weight: bold;
+    background-color: $color-secundario;
     padding: 10px;
     margin: 10px;
     border: $color-principal solid 3px;
@@ -36,26 +36,18 @@
     width: max-content;
     height: max-content;
     border-radius: 50px;
+    color: $color-principal;
 }
-.whatsapp {
-    position: fixed;
-    display: inline-block;
-    bottom: 0;
-    right: 0;
-    background-color: $color-principal;
-    color: antiquewhite;
-    width: max-content;
-    height: max-content;
-}
+
 .icono__whatsapp {
-    color: green;
+    color: $color-principal;
     margin: 5px;
     padding: 3px;
-    display: inline;
+    display: flex;
 }
 .icono__insta {
-    color: palevioletred;
+    color: $color-principal;
     margin: 5px;
     padding: 3px;
-    display: inline;
+    display: flex;
 }
