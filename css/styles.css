@@ -5,14 +5,6 @@
   box-sizing: border-box;
 }
 
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  margin: 0;
-  padding: 10px;
-  font-family: "Montserrat", sans-serif;
-}
-
 h2 {
   text-align: center;
   font-size: 2rem;
@@ -30,7 +22,7 @@ h2 {
   padding: 30px 0 30px 30px;
 }
 
-.backgroundPurpHeader {
+.header {
   background-color: #009a87;
   padding: 2px;
   margin: 0;
@@ -44,11 +36,13 @@ h2 {
   display: flex;
 }
 
+.nav {
+  justify-content: center;
+}
+
 .nav__lista {
-  flex-direction: row;
-  display: flex;
-  margin-left: 70%;
   padding: 20px;
+  display: flex;
 }
 
 .menu {
@@ -61,19 +55,17 @@ h2 {
 
 .box {
   justify-content: space-between;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .box__son--h1 {
-  padding: 5px;
+  padding: 35px 0 0 50px;
   color: #FFFFFF;
   font-size: 2.5rem;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  margin-left: 95%;
-  padding-top: 35px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  text-align: center;
 }
 
 .box__son {
@@ -90,8 +82,9 @@ h2 {
 .box__link {
   text-decoration: none;
   color: #FFFFFF;
-  display: inline-block;
+  display: flex;
   font-weight: bold;
+  align-items: flex-end;
 }
 
 .box__link:hover {
@@ -148,7 +141,7 @@ ul li:hover ul {
   height: 50px;
 }
 
-.backgroundPurpFooter {
+.footer {
   background-color: #009a87;
   padding: 3px;
   margin: 0;
@@ -158,6 +151,17 @@ ul li:hover ul {
   top: 0;
   left: 0;
   display: flex;
+  height: 200px;
+}
+
+.box__link--footer:hover {
+  color: #f68a53;
+}
+
+.div__footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .box__link--footer {
@@ -167,12 +171,8 @@ ul li:hover ul {
   font-size: 25px;
   font-weight: bold;
   position: relative;
-  margin-left: 670%;
-  padding-top: 20px;
-}
-
-.box__link--footer:hover {
-  color: #f68a53;
+  padding: 30px 30px 0 0;
+  align-items: flex-end;
 }
 
 .preguntas__footer {
@@ -183,11 +183,12 @@ ul li:hover ul {
   padding: 10px;
   margin: 10px;
   border: #FFFFFF solid 3px;
-  display: block;
+  display: flex;
   width: max-content;
   height: max-content;
   border-radius: 50px;
   color: #FFFFFF;
+  padding-top: 15px;
 }
 
 .icono__whatsapp {
@@ -562,62 +563,48 @@ ul li:hover ul {
 }
 
 @media screen and (max-width: 1023px) {
-  .fotos {
-    width: 300px;
-    height: 300px;
-    border-radius: 10%;
+  /*Header*/
+  .header {
+    display: inline-block;
+    width: 100%;
   }
-  .fotos__pink {
-    width: 300px;
-    height: 300px;
-    border-radius: 10%;
+  .box {
+    display: flex;
+    flex-direction: row;
   }
   .box__son {
+    display: block;
     line-height: 20px;
-    padding: 5px;
-    margin: 5px;
-    color: blueviolet;
+    padding: 10px;
     font-size: 35px;
+    background-color: #009a87;
+    border-radius: 5px;
+    border: #FFFFFF 1px solid;
+    margin-left: 0;
+    width: max-content;
+    height: max-content;
   }
   .box__son--h1 {
-    font-size: 2.6rem;
+    margin: 20px 0 10px 0;
+    padding: 30px;
+    font-size: 3rem;
   }
   .box__link {
-    color: white;
+    color: #FFFFFF;
     font-size: 25px;
     display: flex;
+    padding: 10px;
   }
-  .boxes {
-    width: 200px;
-    height: 35px;
-    border-radius: 25px;
+  .menu {
+    display: block;
+    color: #FFFFFF;
+    margin: 25px;
   }
-  .button {
-    height: 35px;
-    border-radius: 25px;
+  .menu:hover {
+    color: #f68a53;
   }
-  .preguntas {
-    font-size: 20px;
+  .jam {
     display: flex;
-    width: max-content;
-    border-radius: 25px;
-  }
-  .preguntas__footer {
-    font-size: 20px;
-    width: 400px;
-    border-radius: 25px;
-  }
-  .preguntas__2r {
-    font-size: 20px;
-    display: inline-block;
-    width: max-content;
-    border-radius: 25px;
-    height: max-content;
-  }
-  .respuestas {
-    width: 300px;
-    height: max-content;
-    border-radius: 25px;
   }
   .nav {
     display: none;
@@ -632,91 +619,10 @@ ul li:hover ul {
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 100;
     transition: left 1s;
+    border: solid 2px #009a87;
   }
   #lateral:target {
     left: 0;
-  }
-  .nav__lista {
-    height: 100%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .grid__hijo {
-    width: 400px;
-    height: 450px;
-    padding: 2px;
-    border-radius: 5%;
-  }
-  .producto__nombre {
-    font-size: 20px;
-    padding: 2px;
-  }
-  .producto__precio {
-    font-size: 20px;
-    padding: 2px;
-  }
-  .grid__productos {
-    padding: 2px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1%;
-    grid-template-areas: "ele1 ele2"  "ele3 ele4" "ele5 ele6"  "ele7 ele8" "ele9 ele10"  "ele11 ele12" "ele13 ele14" "ele15 ele16" "ele17 ele18";
-  }
-  .grid {
-    padding: 2px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "ele1 ele2"  "ele3 ele4";
-  }
-  .grid__nuevo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 0.5rem 1rem;
-    transform: translate(-50%);
-    width: 75px;
-    height: max-content;
-    font-size: 10px;
-  }
-  .menu {
-    display: flex;
-  }
-  .jam {
-    display: flex;
-  }
-  .icono__whatsapp {
-    color: green;
-    margin: 5px;
-    padding: 3px;
-  }
-  .icono__insta {
-    color: palevioletred;
-    margin: 5px;
-    padding: 3px;
-  }
-  .carrusel {
-    width: 400px;
-    height: 750px;
-  }
-  .fondo__reseñas {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-  }
-  .iframe {
-    width: 250px;
-    height: 250px;
-  }
-  .mapita__p {
-    font-size: 20px;
-    width: 400px;
-    color: black;
   }
   ul {
     display: block;
@@ -725,7 +631,8 @@ ul li:hover ul {
     display: block;
     width: 25%;
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 10px;
   }
   ul ul {
     position: relative;
@@ -745,9 +652,37 @@ ul li:hover ul {
     transform: scale(2px);
     position: relative;
   }
-  .fondo__reseñas {
+  .nav__lista {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  /*Productos*/
+  .fotos {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+  }
+  .fotos__pink {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+  }
+  .grid__hijo {
     width: 300px;
-    height: 150px;
+    height: 400px;
+    padding: 2px;
+    border-radius: 5%;
+  }
+  .producto__nombre {
+    font-size: 20px;
+    padding: 2px;
+  }
+  .producto__precio {
+    font-size: 20px;
+    padding: 2px;
   }
   .carrito {
     border-radius: 5px;
@@ -755,16 +690,118 @@ ul li:hover ul {
     padding: 2px;
     position: relative;
   }
+  .grid__productos {
+    padding: 2px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1%;
+    grid-template-areas: "ele1 ele2"  "ele3 ele4" "ele5 ele6"  "ele7 ele8" "ele9 ele10"  "ele11 ele12" "ele13 ele14" "ele15 ele16" "ele17 ele18";
+    justify-content: center;
+  }
+  .grid {
+    padding: 2px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ele1 ele2"  "ele3 ele4";
+    justify-content: center;
+  }
+  .grid__nuevo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transform: translate(-50%);
+    width: 75px;
+    height: max-content;
+    font-size: 10px;
+  }
+  /*Pregunta frecuentas*/
+  .preguntas {
+    font-size: 20px;
+    display: flex;
+    width: max-content;
+    border-radius: 25px;
+  }
+  .preguntas__2r {
+    font-size: 20px;
+    display: inline-block;
+    width: max-content;
+    border-radius: 25px;
+    height: max-content;
+  }
+  .respuestas {
+    width: 300px;
+    height: max-content;
+    border-radius: 25px;
+  }
+  .mapita {
+    border: solid 2px #009a87;
+    background-color: #FFFFFF;
+    padding: 10px;
+    height: 475px;
+    width: 450px;
+    text-align: center;
+    display: inline-block;
+  }
+  .iframe {
+    width: 350px;
+    height: 350px;
+  }
+  .mapita__p {
+    font-size: 20px;
+    width: 400px;
+    color: #FFFFFF;
+    height: max-content;
+  }
+  /*Footer*/
+  .boxes {
+    width: 200px;
+    height: 35px;
+    border-radius: 25px;
+  }
+  .button {
+    height: 35px;
+    border-radius: 25px;
+  }
+  .preguntas__footer {
+    font-size: 20px;
+    width: 400px;
+    border-radius: 25px;
+  }
+  .icono__whatsapp {
+    color: #FFFFFF;
+    margin: 5px;
+    padding: 3px;
+  }
+  .icono__insta {
+    color: #FFFFFF;
+    margin: 5px;
+    padding: 3px;
+  }
+  .carrusel {
+    width: 600px;
+    height: 750px;
+  }
+  .fondo__reseñas {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   /* Header */
-  .backgroundPurpHeader {
+  .header {
     display: inline-block;
     width: 100%;
   }
   .box {
     display: flex;
+    flex-direction: row;
   }
   .box__son {
     display: block;
@@ -779,7 +816,7 @@ ul li:hover ul {
     height: max-content;
   }
   .box__son--h1 {
-    margin: 5px 10px 10px 0;
+    margin: 28px 0 10px 0;
     padding: 10px;
     font-size: 30px;
   }
@@ -906,6 +943,14 @@ ul li:hover ul {
   }
   .producto__titulo {
     font-size: 1.5rem;
+  }
+  .fondo__reseñas {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: max-content;
   }
   /*Preguntas Frecuentes*/
   .preguntas {

@@ -2,12 +2,13 @@
 
     /* Header */
 
-.backgroundPurpHeader { 
+.header { 
     display: inline-block;
     width: 100%;
 }
 .box {
     display: flex;
+    flex-direction: row;
   }
 .box__son {
     display: block;
@@ -23,7 +24,7 @@
    
 }
 .box__son--h1{
-margin: 5px 10px 10px 0;
+margin: 28px 0 10px 0;
 padding: 10px;
 font-size: 30px;
 
@@ -170,7 +171,14 @@ ul li ul {
         font-size: 1.5rem;
     }
 
-
+    .fondo__reseñas{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $color-principal;
+        padding: 10px;
+        border-radius: 10px;
+        width: $ancho*3;
+        height: max-content;
+        }
 /*Preguntas Frecuentes*/
 .preguntas {
     font-family: $font-family;
